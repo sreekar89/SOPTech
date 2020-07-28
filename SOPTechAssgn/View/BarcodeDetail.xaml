@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SOPTechAssgn.View.BarcodeDetail">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Scan" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+               <Grid Padding="10,0" Margin="10" RowSpacing="10">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <GridLength x:Key="dividerThickness">2</GridLength>
+                
+                <Style TargetType="BoxView">
+                    <Setter Property="Color" Value="Accent" />
+                </Style>
+
+                <Style TargetType="Label">
+                    <Setter Property="HorizontalOptions" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="Center" />
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="{StaticResource dividerThickness}" />
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{StaticResource dividerThickness}" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="{StaticResource dividerThickness}" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="{StaticResource dividerThickness}" />
+        </Grid.ColumnDefinitions>
+
+        <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="18" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="20" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="22" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="24" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="26" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="28" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="30" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="32" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="34" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="36" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="38" Grid.Column="0" Grid.ColumnSpan="5" />
+        <BoxView Grid.Row="40" Grid.Column="0" Grid.ColumnSpan="5" />
+
+        <BoxView Grid.Row="0" Grid.Column="0" Grid.RowSpan="41" />
+        <BoxView Grid.Row="0" Grid.Column="2" Grid.RowSpan="41" />
+        <BoxView Grid.Row="0" Grid.Column="4" Grid.RowSpan="41" />
+     
+             <Label Grid.Column="1"
+                   Grid.Row="1"
+                    Text="Division"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="1"
+                    x:Name="lb_Division"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="3"
+                    Text="Section"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+             <Label Grid.Column="3"
+                   Grid.Row="3"
+                    x:Name="lb_Section"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="5"
+                    Text="Subsection"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+             <Label Grid.Column="3"
+                   Grid.Row="5"
+                    x:Name="lb_SubSection"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="7"
+                    Text="Barcode"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="7"
+                   x:Name="lb_Barcode"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="9"
+                    Text="Location"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="9"
+                    x:Name="lb_Location"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="11"
+                    Text="Qty.in.Stock"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="11"
+                    x:Name="lb_QTYStock"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="13"
+                    Text="Single.ItemCP"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="13"
+                   x:Name="lb_SingleCP"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="15"
+                    Text="Single.ItemMRP"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="15"
+                    x:Name="lb_SingleMRP"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="17"
+                    Text="Single.ItemEffMRP"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="17"
+                    x:Name="lb_SingleEffMRP"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="19"
+                    Text="VendorCity"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="19"
+                    x:Name="lb_VendorCity"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="21"
+                    Text="VendorName"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="21"
+                    x:Name="lb_VendorName"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="23"
+                    Text="Age(Days)"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="23"
+                    x:Name="lb_Age"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="25"
+                    Text="CNSNO"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="25"
+                    x:Name="lb_CSNO"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="27"
+                    Text="InvoiceNo."
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="27"
+                    x:Name="lb_InvoiceNo"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="29"
+                    Text="Inv.LineNo"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="29"
+                    x:Name="lb_InvLineNo"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="31"
+                    Text="Promotion"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="31"
+                    x:Name="lb_Promotion"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="33"
+                    Text="BatchNo"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="33"
+                    x:Name="lb_BatchNo"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="35"
+                    Text="currentMU.%"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="35"
+                    x:Name="lb_currentMU"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="37"
+                    Text="DCODE"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="37"
+                    x:Name="lb_DCODE"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+
+            <Label Grid.Column="1"
+                   Grid.Row="39"
+                    Text="DesiredMU.%"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+            <Label Grid.Column="3"
+                   Grid.Row="39"
+                    x:Name="lb_DesiredMU"
+                    HorizontalOptions="StartAndExpand"
+                    VerticalOptions="Center" />
+    </Grid>
+     </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
